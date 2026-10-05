@@ -1,0 +1,14 @@
+{
+  "extName": { "message": "Focus Mode for YouTube" },
+  "extDesc": { "message": "Hides what distracts on YouTube: Shorts, recommendations, suggestions, comments and live chat, with a switch for each." },
+  "focusTitle": { "message": "Focus mode" },
+  "focusDesc": { "message": "Hides everything at once. Turn it off to go back to normal." },
+  "featShorts": { "message": "Hide Shorts" },
+  "featHome": { "message": "Hide home page recommendations" },
+  "featRelated": { "message": "Hide suggestions next to the video" },
+  "featComments": { "message": "Hide comments" },
+  "featEndscreen": { "message": "Hide end-of-video suggestions" },
+  "featChat": { "message": "Hide live chat" },
+  "hint": { "message": "With Focus mode off, pick below what to hide. Search and the video itself keep working normally." },
+  "donate": { "message": "☕ Enjoying it? Support the project" }
+}

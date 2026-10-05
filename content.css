@@ -1,0 +1,60 @@
+/* Cada bloco só vale quando o atributo correspondente está no <html> (ver content.js). */
+
+/* Shorts: prateleiras, menu lateral, itens soltos nas listas e a aba do canal */
+html[data-ytf-shorts] ytd-rich-shelf-renderer[is-shorts],
+html[data-ytf-shorts] ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts]),
+html[data-ytf-shorts] ytd-reel-shelf-renderer,
+html[data-ytf-shorts] ytd-guide-entry-renderer:has(a[title="Shorts"]),
+html[data-ytf-shorts] ytd-mini-guide-entry-renderer[aria-label="Shorts"],
+html[data-ytf-shorts] ytd-rich-item-renderer:has(a[href^="/shorts/"]),
+html[data-ytf-shorts] ytd-video-renderer:has(a[href^="/shorts/"]),
+html[data-ytf-shorts] ytd-compact-video-renderer:has(a[href^="/shorts/"]),
+html[data-ytf-shorts] ytd-grid-video-renderer:has(a[href^="/shorts/"]),
+html[data-ytf-shorts] grid-shelf-view-model:has(ytm-shorts-lockup-view-model),
+html[data-ytf-shorts] grid-shelf-view-model:has(ytm-shorts-lockup-view-model-v2),
+html[data-ytf-shorts] ytm-shorts-lockup-view-model,
+html[data-ytf-shorts] ytm-shorts-lockup-view-model-v2,
+html[data-ytf-shorts] yt-tab-shape[tab-title="Shorts"] {
+  display: none !important;
+}
+
+/* Página inicial: recomendações (a busca e o menu continuam) */
+html[data-ytf-home] ytd-browse[page-subtype="home"] ytd-rich-grid-renderer {
+  display: none !important;
+}
+
+/* Sugestões ao lado do vídeo */
+html[data-ytf-related] ytd-watch-flexy #related,
+html[data-ytf-related] ytd-watch-next-secondary-results-renderer {
+  display: none !important;
+}
+
+/* Comentários */
+html[data-ytf-comments] ytd-comments,
+html[data-ytf-comments] ytd-comments#comments {
+  display: none !important;
+}
+
+/* Chat ao vivo (e chat da reprise) das lives */
+html[data-ytf-chat] #chat-container,
+html[data-ytf-chat] ytd-live-chat-frame {
+  display: none !important;
+}
+/* Sem o chat, a coluna lateral fica vazia (ou só com sugestões): escondê-la faz o vídeo ocupar
+   a largura toda em vez de deixar um buraco. Só em páginas com chat aberto. */
+html[data-ytf-chat] ytd-watch-flexy[live-chat-present-and-expanded] #secondary {
+  display: none !important;
+}
+/* Modo teatro: o chat fica num contêiner próprio de largura fixa ao lado do player, e o player
+   encolhe para abrir espaço. Escondê-lo faz o player voltar a ocupar a largura toda. */
+html[data-ytf-chat] ytd-watch-flexy[live-chat-present-and-expanded] #panels-full-bleed-container {
+  display: none !important;
+}
+
+/* Sugestões que aparecem no fim do vídeo e cartões sobre ele */
+html[data-ytf-endscreen] .html5-endscreen,
+html[data-ytf-endscreen] .ytp-ce-element,
+html[data-ytf-endscreen] .ytp-cards-teaser,
+html[data-ytf-endscreen] .ytp-endscreen-content {
+  display: none !important;
+}

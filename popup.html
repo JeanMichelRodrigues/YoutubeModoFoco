@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { background: #212121; color: #fff; font-family: Roboto, Arial, sans-serif; width: 320px; margin: 0; padding: 16px; font-size: 13px; }
+    header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+    header b { font-size: 15px; }
+    label.chk { display: flex; flex-direction: row-reverse; justify-content: space-between; align-items: center; gap: 12px; cursor: pointer; }
+    input[type=checkbox] {
+      appearance: none; -webkit-appearance: none; flex: none; margin: 0; cursor: pointer;
+      width: 44px; height: 24px; border-radius: 12px; background: #3a3a3a; position: relative;
+      transition: background .15s;
+    }
+    input[type=checkbox]::after {
+      content: ""; position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; border-radius: 50%;
+      background: #9a9a9a; transition: transform .15s, background-color .15s;
+    }
+    input[type=checkbox]:checked { background: #81c995; }
+    input[type=checkbox]:checked::after {
+      transform: translateX(20px);
+      background: linear-gradient(#fff, #fff) center / 2px 9px no-repeat #1e8e3e;
+    }
+    input[type=checkbox]:focus-visible { outline: 2px solid #8ab4f8; outline-offset: 2px; }
+    .desc { color: #aaa; font-size: 12px; margin: 0 0 10px; }
+    #list { border-top: 1px solid #3f3f3f; margin-top: 12px; padding-top: 2px; transition: opacity .15s; }
+    #list.dim { opacity: .45; }
+    #list label.chk { margin-top: 12px; }
+    .hint { color: #aaa; margin-top: 14px; font-size: 12px; }
+    #donate { color: #8ab4f8; text-decoration: none; }
+    #donate:hover { text-decoration: underline; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <header>
+    <b data-i18n="focusTitle"></b>
+    <label class="chk" style="margin:0"><input type="checkbox" id="focus"></label>
+  </header>
+  <p class="desc" data-i18n="focusDesc"></p>
+
+  <div id="list"></div>
+
+  <div class="hint" data-i18n="hint"></div>
+  <div class="hint"><a id="donate" href="#" target="_blank" rel="noopener" hidden data-i18n="donate"></a></div>
+
+  <script src="defaults.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

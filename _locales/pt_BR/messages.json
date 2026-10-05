@@ -1,0 +1,14 @@
+{
+  "extName": { "message": "Modo Foco para YouTube" },
+  "extDesc": { "message": "Esconde o que distrai no YouTube: Shorts, recomendações, sugestões, comentários e chat de lives, com uma chave para cada um." },
+  "focusTitle": { "message": "Modo foco" },
+  "focusDesc": { "message": "Esconde tudo de uma vez. Desligue para voltar ao normal." },
+  "featShorts": { "message": "Esconder Shorts" },
+  "featHome": { "message": "Esconder recomendações da página inicial" },
+  "featRelated": { "message": "Esconder sugestões ao lado do vídeo" },
+  "featComments": { "message": "Esconder comentários" },
+  "featEndscreen": { "message": "Esconder sugestões do fim do vídeo" },
+  "featChat": { "message": "Esconder chat ao vivo" },
+  "hint": { "message": "Com o Modo foco desligado, escolha abaixo o que esconder. A busca e o vídeo continuam funcionando normalmente." },
+  "donate": { "message": "☕ Gostou? Apoie o projeto" }
+}
