@@ -7,6 +7,7 @@ const DF_DEFAULTS = {
   comments: false,  // esconde os comentários
   endscreen: false, // esconde as sugestões que aparecem no fim e sobre o vídeo
   chat: false,      // esconde o chat ao vivo (e o chat da reprise) das lives
+  theater: false,   // abre sempre os vídeos em Modo Teatro (não é um item escondido; fica fora de DF_FEATURES)
 };
 // Itens que podem ser escondidos, na ordem em que aparecem no popup: [chave, texto traduzido].
 // Cada um liga o atributo data-ytf-<chave> no <html>; o content.css esconde os elementos.

@@ -9,6 +9,7 @@
   "featComments": { "message": "Hide comments" },
   "featEndscreen": { "message": "Hide end-of-video suggestions" },
   "featChat": { "message": "Hide live chat" },
+  "optTheater": { "message": "Always open videos in Theater mode" },
   "hint": { "message": "With Focus mode off, pick below what to hide. Search and the video itself keep working normally." },
   "donate": { "message": "☕ Enjoying it? Support the project" }
 }

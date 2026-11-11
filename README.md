@@ -14,11 +14,15 @@ Chrome extension that hides what distracts on YouTube, with a switch for each it
 - **Chat ao vivo** das lives e das reprises / live chat on streams and replays.
 - **Modo foco:** uma chave que esconde tudo / one switch that hides everything.
 
+## Opção extra / Extra option
+
+- **Sempre abrir vídeos em Modo Teatro:** chave separada (fora do Modo foco); ao abrir um vídeo, clica uma vez no botão de tamanho do player se ele ainda não estiver em teatro / separate switch (independent of Focus mode); when a video opens, clicks the player's size button once if it isn't already in theater mode.
+
 Sem coleta de dados, sem servidor, sem código remoto / No data collection, no server, no remote code.
 
 ## Como funciona
 
-`content.js` liga atributos `data-ytf-*` no `<html>` conforme as opções (`chrome.storage.sync`); `content.css` esconde os elementos quando o atributo está presente. Não há script rodando continuamente nem acesso à rede. A única permissão é `storage`.
+`content.js` liga atributos `data-ytf-*` no `<html>` conforme as opções (`chrome.storage.sync`); `content.css` esconde os elementos quando o atributo está presente. Para o Modo Teatro, o `content.js` também clica uma vez no botão de tamanho do player (`.ytp-size-button`) a cada vídeo aberto, se a opção estiver ligada. Não há acesso à rede. A única permissão é `storage`.
 
 ### O chat ao vivo e o layout
 
@@ -40,7 +44,7 @@ Efeito colateral: as sugestões que ficam na coluna lateral, quando existem, som
 |---|---|
 | `manifest.json` | Manifest V3; só a permissão `storage` e acesso a youtube.com |
 | `content.css` | Seletores que escondem cada item |
-| `content.js` | Liga os atributos `data-ytf-*` no `<html>` |
+| `content.js` | Liga os atributos `data-ytf-*` no `<html>` e abre vídeos em Modo Teatro |
 | `defaults.js` | Opções padrão, lista de itens e links de apoio |
 | `popup.html` / `popup.js` | Popup com as chaves |
 | `_locales/` | Textos em pt-BR e en |

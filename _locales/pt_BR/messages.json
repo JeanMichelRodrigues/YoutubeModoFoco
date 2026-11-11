@@ -9,6 +9,7 @@
   "featComments": { "message": "Esconder comentários" },
   "featEndscreen": { "message": "Esconder sugestões do fim do vídeo" },
   "featChat": { "message": "Esconder chat ao vivo" },
+  "optTheater": { "message": "Sempre abrir vídeos em Modo Teatro" },
   "hint": { "message": "Com o Modo foco desligado, escolha abaixo o que esconder. A busca e o vídeo continuam funcionando normalmente." },
   "donate": { "message": "☕ Gostou? Apoie o projeto" }
 }

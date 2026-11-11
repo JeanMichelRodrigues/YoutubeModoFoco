@@ -26,6 +26,8 @@
     #list { border-top: 1px solid #3f3f3f; margin-top: 12px; padding-top: 2px; transition: opacity .15s; }
     #list.dim { opacity: .45; }
     #list label.chk { margin-top: 12px; }
+    #extra { border-top: 1px solid #3f3f3f; margin-top: 14px; padding-top: 2px; }
+    #extra label.chk { margin-top: 12px; }
     .hint { color: #aaa; margin-top: 14px; font-size: 12px; }
     #donate { color: #8ab4f8; text-decoration: none; }
     #donate:hover { text-decoration: underline; }
@@ -40,6 +42,10 @@
   <p class="desc" data-i18n="focusDesc"></p>
 
   <div id="list"></div>
+
+  <div id="extra">
+    <label class="chk"><input type="checkbox" id="theater"><span data-i18n="optTheater"></span></label>
+  </div>
 
   <div class="hint" data-i18n="hint"></div>
   <div class="hint"><a id="donate" href="#" target="_blank" rel="noopener" hidden data-i18n="donate"></a></div>

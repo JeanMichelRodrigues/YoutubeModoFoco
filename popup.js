@@ -28,7 +28,14 @@ function render() {
   // Com o Modo foco ligado, tudo fica escondido; as chaves abaixo só valem quando ele está desligado.
   $("list").classList.toggle("dim", state.focus);
   boxes.forEach(({ key, input }) => (input.checked = state.focus || state[key]));
+  $("theater").checked = state.theater;
 }
+
+// Independente do Modo foco: sempre abrir os vídeos em Modo Teatro.
+$("theater").onchange = () => {
+  state.theater = $("theater").checked;
+  chrome.storage.sync.set({ theater: state.theater });
+};
 
 $("focus").onchange = () => {
   state.focus = $("focus").checked;
